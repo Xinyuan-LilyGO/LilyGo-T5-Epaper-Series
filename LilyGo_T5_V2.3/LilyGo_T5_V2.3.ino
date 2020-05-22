@@ -3,8 +3,14 @@
 #include "SD.h"
 #include "SPI.h"
 
-// #include <GxGDE0213B72B/GxGDE0213B72B.h>       // 2.13" b/w
-#include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w newer panel
+//! There are three versions of the 2.13 screen,
+//  if you are not sure which version, please test each one,
+//  if it is successful then it belongs to the model of the file name
+//  关于v2.3版本的显示屏版本,如果不确定购买的显示屏型号,请每个头文件都测试一遍.
+
+//#include <GxGDE0213B1/GxGDE0213B1.h>      // 2.13" b/w
+//#include <GxGDEH0213B72/GxGDEH0213B72.h>  // 2.13" b/w new panel
+//#include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w newer panel
 
 int bmpWidth = 150, bmpHeight = 39;
 //width:150,height:39
