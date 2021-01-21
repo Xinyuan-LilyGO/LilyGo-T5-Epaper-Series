@@ -11,6 +11,7 @@
 //#include <GxGDE0213B1/GxGDE0213B1.h>      // 2.13" b/w
 //#include <GxGDEH0213B72/GxGDEH0213B72.h>  // 2.13" b/w new panel
 #include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w newer panel
+// #include <GxDEPG0213BN/GxDEPG0213BN.h>      // 2.13" b/w newer panel
 
 int bmpWidth = 150, bmpHeight = 39;
 //width:150,height:39
