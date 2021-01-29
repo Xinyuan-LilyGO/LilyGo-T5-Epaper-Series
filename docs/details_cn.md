@@ -6,14 +6,19 @@
 
 --------------------------------------
 
-##### 这是LilyGo的墨水屏系列，最简单的硬件测试代码仓库，在编程前请仔细阅读README
 
 <h2 align = "left">快速开始⚡:</h2>
 
-1. 根据每个示例文件夹中的`README`中依赖的库进行安装.
-2. 在开发板中选择`ESP32 Dev Module`，其他选项保持默认
-3. 如果你在开发板中没找到ESP32系列，那么你该看下面安装方法[如何在ArduinoIDE中安装ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
-4. 关于你购买的板子的版本,请查看下面的产品连接
+1. 安装下面两个依赖
+    - [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)
+    - 对于使用1.54" 红黑白的,示例程序使用`GxEPD2`作为驱动程序,需要安装[ZinggJM/GxEPD2](https://github.com/ZinggJM/GxEPD2),对于其他型号,请使用这个分支[lewisxhe/fork/GxEPD](https://github.com/lewisxhe/GxEPD),请注意，引用错误的分支会导致程序无法编译
+2. 在草图的最上方,定义要使用的板子和屏幕的型号
+3. 在开发板中选择`ESP32 Dev Module`，其他选项保持默认
+4. 如果你在开发板中没找到ESP32系列，那么你该看下面安装方法[如何在ArduinoIDE中安装ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+5. 关于你购买的板子的版本,请查看下面的产品连接
+6. 当你认为你的板子有问题时,你可以在`firmware`目录拉取与你对应屏幕型号的二进制文件，按照目录内的`SETTING.png`设置后,将它下载到板子，然后观察执行情况.
+
+
 
 <h2 align = "left">产品链接📷:</h2>
 
@@ -26,3 +31,13 @@
 
 
 
+<h2 align = "left">示例描述:</h2>
+
+```
+examples
+├── GxEPD2_Z90_Eaxmple              # 1.54" 红黑白三色示例 
+├── GxEPD_Example                   # 适配所有LilyGo 电子纸
+├── GxEPD_Example_MP3               # 播放MP3示例,V2.13不适用 
+├── GxEPD_U8G2_Fonts_Example        # U8g2 字体示例
+└── GxEPD_Partial_Update_Example    # 局部刷新示例
+```
