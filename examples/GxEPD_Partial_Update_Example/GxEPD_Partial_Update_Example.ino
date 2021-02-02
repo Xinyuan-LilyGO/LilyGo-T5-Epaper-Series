@@ -34,6 +34,7 @@
 // #include <GxGDEW0154Z17/GxGDEW0154Z17.h>  // 1.54" b/w/r 152x152
 // #include <GxGDEW027C44/GxGDEW027C44.h>    // 2.7" b/w/r
 // #include <GxGDEW029Z10/GxGDEW029Z10.h>    // 2.9" b/w/r
+// #include <GxDEPG0290B/GxDEPG0290B.h>      // 2.9" b/w new panel
 
 
 

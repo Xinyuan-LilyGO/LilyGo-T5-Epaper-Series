@@ -33,6 +33,7 @@
 // #include <GxGDEW029Z10/GxGDEW029Z10.h>    // 2.9" b/w/r
 // #include <GxGDEH029A1/GxGDEH029A1.h>      // 2.9" b/w
 // #include <GxQYEG0290BN/GxQYEG0290BN.h>    // 2.9" b/w new panel
+// #include <GxDEPG0290B/GxDEPG0290B.h>      // 2.9" b/w new panel
 
 
 #include GxEPD_BitmapExamples
