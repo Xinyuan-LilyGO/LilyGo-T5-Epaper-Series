@@ -31,8 +31,11 @@ Depend ESP8266Audio and ESP8266_Spiram libraries
 
 // #include <GxGDEW0213Z16/GxGDEW0213Z16.h>  // 2.13" b/w/r
 
-// #include <GxGDEH0213B72/GxGDEH0213B72.h>  // 2.13" b/w new panel
-// #include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w newer panel
+// old panel
+// #include <GxGDEH0213B72/GxGDEH0213B72.h>  // 2.13" b/w old panel
+// #include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w old panel
+
+//! The current LilyGo uses the ink screen version DEPG0213BN
 // #include <GxDEPG0213BN/GxDEPG0213BN.h>    // 2.13" b/w newer panel
 
 

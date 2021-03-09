@@ -18,6 +18,7 @@
 6. When you think there is a problem with your board, you can pull the binary file corresponding to your screen model in the firmware directory, follow the `SETTING.png` settings in the directory, download it to the board, and then observe the execution. 
 
 
+
 <h2 align = "left">Product link📷:</h2>
 
 |   Examples   |                          Product  Link                           |              Schematic              | Status |
@@ -39,3 +40,6 @@ examples
 ├── GxEPD_U8G2_Fonts_Example         # U8g2 font example 
 └── GxEPD_Partial_Update_Example     # Partial refresh example 
 ```
+
+# Change: 
+- The current version of LilyGo V2.13, the ink screen version is DEPG0213BN, please select `DEPG0213BN` in the sketch 

@@ -20,9 +20,13 @@
 
 // #include <GxGDEW027W3/GxGDEW027W3.h>      // 2.7" b/w
 
-// #include <GxGDEH0213B72/GxGDEH0213B72.h>  // 2.13" b/w new panel
-// #include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w newer panel
+// old panel
+// #include <GxGDEH0213B72/GxGDEH0213B72.h>  // 2.13" b/w old panel
+// #include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w old panel
+
+//! The current LilyGo uses the ink screen version DEPG0213BN
 // #include <GxDEPG0213BN/GxDEPG0213BN.h>    // 2.13" b/w newer panel
+
 
 // #include <GxGDEH029A1/GxGDEH029A1.h>      // 2.9" b/w
 // #include <GxQYEG0290BN/GxQYEG0290BN.h>    // 2.9" b/w new panel
