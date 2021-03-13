@@ -11,14 +11,15 @@
 
 
 #include <boards.h>
-#include <GxEPD.h>      //https://github.com/lewisxhe/GxEPD
+#include <GxEPD.h>
 #include <SD.h>
 #include <FS.h>
 
 // #include <GxGDEW0154Z04/GxGDEW0154Z04.h>  // 1.54" b/w/r 200x200
 // #include <GxGDEW0154Z17/GxGDEW0154Z17.h>  // 1.54" b/w/r 152x152
 // #include <GxGDEH0154D67/GxGDEH0154D67.h>  // 1.54" b/w
-// #include <GxDEPG0150BN/GxDEPG0150BN.h>    // 1.51" b/w newer panel
+
+// #include <GxDEPG0150BN/GxDEPG0150BN.h>    // 1.51" b/w   form DKE GROUP
 
 // #include <GxGDEW027C44/GxGDEW027C44.h>    // 2.7" b/w/r
 // #include <GxGDEW027W3/GxGDEW027W3.h>      // 2.7" b/w
@@ -30,13 +31,16 @@
 // #include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w old panel
 
 //! The current LilyGo uses the ink screen version DEPG0213BN
-// #include <GxDEPG0213BN/GxDEPG0213BN.h>    // 2.13" b/w newer panel
+// #include <GxDEPG0213BN/GxDEPG0213BN.h>    // 2.13" b/w  form DKE GROUP
 
+// #include <GxDEPG0266BN/GxDEPG0266BN.h>    // 2.66" b/w  form DKE GROUP
 
-// #include <GxGDEW029Z10/GxGDEW029Z10.h>    // 2.9" b/w/r
 // #include <GxGDEH029A1/GxGDEH029A1.h>      // 2.9" b/w
 // #include <GxQYEG0290BN/GxQYEG0290BN.h>    // 2.9" b/w new panel
-// #include <GxDEPG0290B/GxDEPG0290B.h>      // 2.9" b/w new panel
+// #include <GxDEPG0290B/GxDEPG0290B.h>      // 2.9" b/w    form DKE GROUP
+
+// #include <GxGDEW029Z10/GxGDEW029Z10.h>    // 2.9" b/w/r
+// #include <GxDEPG0290R/GxDEPG0290R.h>      // 2.9" b/w/r  form DKE GROUP
 
 
 #include GxEPD_BitmapExamples
@@ -58,7 +62,7 @@ GxEPD_Class display(io, EPD_RSET, EPD_BUSY);
 SPIClass SDSPI(VSPI);
 #endif
 
-#if defined(_GxGDEW0213Z16_H_) || defined(_GxGDEW029Z10_H_) || defined(_GxGDEW027C44_H_) ||defined(_GxGDEW0154Z17_H_) || defined(_GxGDEW0154Z04_H_)
+#if defined(_GxGDEW0213Z16_H_) || defined(_GxGDEW029Z10_H_) || defined(_GxGDEW027C44_H_) ||defined(_GxGDEW0154Z17_H_) || defined(_GxGDEW0154Z04_H_) || defined(_GxDEPG0290R_H_)
 #define _HAS_COLOR_
 #endif
 
