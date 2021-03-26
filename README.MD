@@ -27,6 +27,7 @@
 | [T5 V2.3]()  | [Product link](https://www.aliexpress.com/item/32869729970.html) | [Schematic](./schematic/T5V2.3.pdf) |   ✅    |
 | [T5 V2.4]()  | [Product link](https://www.aliexpress.com/item/32860674791.html) | [Schematic](./schematic/T5V2.4.pdf) |   ✅    |
 | [T5 V2.8]()  | [Product link](https://www.aliexpress.com/item/32867880658.html) | [Schematic](./schematic/T5v2.8.pdf) |   ✅    |
+| [T5 V1.02]() |                         [Product link]()                         |            [Schematic]()            |   X    |
 
 
 
