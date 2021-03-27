@@ -37,6 +37,7 @@
 examples
 ├── GxEPD2_Z90_Eaxmple               # 1.54" red black and white three-color electronic paper example, 
 ├── GxEPD_Example                    # Suitable for all LilyGo electronic paper 
+├── GxEPD_Example2                   # Suitable for all LilyGo electronic paper 
 ├── GxEPD_Example_MP3                # Example of playing MP3 
 ├── GxEPD_U8G2_Fonts_Example         # U8g2 font example 
 └── GxEPD_Partial_Update_Example     # Partial refresh example 
