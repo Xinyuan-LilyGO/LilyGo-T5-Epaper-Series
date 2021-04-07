@@ -9,6 +9,8 @@
 // #define LILYGO_T5_V24
 // #define LILYGO_T5_V28
 // #define LILYGO_T5_V102
+// #define LILYGO_T5_V266
+// #define LILYGO_EPD_DISPLAY
 
 #include <boards.h>
 #include <GxEPD.h>
@@ -18,36 +20,34 @@
 
 using namespace         ace_button;
 
+#if defined(LILYGO_T5_V102) || defined(LILYGO_EPD_DISPLAY)
+#include <GxGDGDEW0102T4/GxGDGDEW0102T4.h> //1.02" b/w
+#elif defined(LILYGO_T5_V266)
+#include <GxDEPG0266BN/GxDEPG0266BN.h>    // 2.66" b/w   form DKE GROUP
+#elif defined(LILYGO_T5_V213)
+#include <GxDEPG0213BN/GxDEPG0213BN.h>    // 2.13" b/w  form DKE GROUP
+#else
 // #include <GxGDGDEW0102T4/GxGDGDEW0102T4.h> //1.02" b/w
-
 // #include <GxGDEW0154Z04/GxGDEW0154Z04.h>  // 1.54" b/w/r 200x200
 // #include <GxGDEW0154Z17/GxGDEW0154Z17.h>  // 1.54" b/w/r 152x152
 // #include <GxGDEH0154D67/GxGDEH0154D67.h>  // 1.54" b/w
-
 // #include <GxDEPG0150BN/GxDEPG0150BN.h>    // 1.51" b/w   form DKE GROUP
-
 // #include <GxDEPG0266BN/GxDEPG0266BN.h>    // 2.66" b/w   form DKE GROUP
-
 // #include <GxDEPG0290R/GxDEPG0290R.h>      // 2.9" b/w/r  form DKE GROUP
 // #include <GxDEPG0290B/GxDEPG0290B.h>      // 2.9" b/w    form DKE GROUP
 // #include <GxGDEW029Z10/GxGDEW029Z10.h>    // 2.9" b/w/r  form GoodDisplay
-
 // #include <GxGDEW0213Z16/GxGDEW0213Z16.h>  // 2.13" b/w/r form GoodDisplay
 // #include <GxGDE0213B1/GxGDE0213B1.h>      // 2.13" b/w  old panel , form GoodDisplay
 // #include <GxGDEH0213B72/GxGDEH0213B72.h>  // 2.13" b/w  old panel , form GoodDisplay
 // #include <GxGDEH0213B73/GxGDEH0213B73.h>  // 2.13" b/w  old panel , form GoodDisplay
-
 // #include <GxGDEM0213B74/GxGDEM0213B74.h>  // 2.13" b/w  form GoodDisplay 4-color
 // #include <GxGDEW0213M21/GxGDEW0213M21.h>  // 2.13"  b/w Ultra wide temperature , form GoodDisplay
-
 // #include <GxDEPG0213BN/GxDEPG0213BN.h>    // 2.13" b/w  form DKE GROUP
-
 // #include <GxGDEW027W3/GxGDEW027W3.h>      // 2.7" b/w   form GoodDisplay
 // #include <GxGDEW027C44/GxGDEW027C44.h>    // 2.7" b/w/r form GoodDisplay
 // #include <GxGDEH029A1/GxGDEH029A1.h>      // 2.9" b/w   form GoodDisplay
-
 // #include <GxDEPG0750BN/GxDEPG0750BN.h>    // 7.5" b/w   form DKE GROUP
-
+#endif
 
 #include GxEPD_BitmapExamples
 
@@ -71,12 +71,12 @@ using namespace         ace_button;
 GxIO_Class io(SPI,  EPD_CS, EPD_DC,  EPD_RSET);
 GxEPD_Class display(io, EPD_RSET, EPD_BUSY);
 
-AceButton btn1(BUTTON_1);
+AceButton btn1(BUTTON_1, HIGH);
 #ifdef BUTTON_2
-AceButton btn2(BUTTON_2);
+AceButton btn2(BUTTON_2, HIGH);
 #endif
 #ifdef BUTTON_3
-AceButton btn3(BUTTON_3);
+AceButton btn3(BUTTON_3, HIGH);
 #endif
 bool rlst = false;
 
@@ -157,13 +157,26 @@ void testWiFi()
 
 static void aceButtonHandleEventCb(AceButton *b, uint8_t event, uint8_t state)
 {
-    // Serial.printf("Pin:%d event:%u state:%u\n", b->getPin(), event, state);
+    Serial.printf("Pin:%d event:%u state:%u\n", b->getPin(), event, state);
+
+
+#ifdef LILYGO_T5_V102
+    if (event != AceButton::kEventReleased && event != AceButton::kEventLongPressed) {
+        return;
+    }
+#else
     if (event != AceButton::kEventClicked && event != AceButton::kEventLongPressed) {
         return;
     }
+#endif
+
     switch (b->getPin()) {
     case BUTTON_1:
+#ifdef LILYGO_T5_V102
+        event == AceButton::kEventLongPressed ? EnterSleep() : GxepdPage0();
+#else
         event == AceButton::kEventClicked ? GxepdPage0() : EnterSleep();
+#endif
         break;
 #ifdef BUTTON_2
     case BUTTON_2:
@@ -186,6 +199,12 @@ void setup()
     Serial.println();
     Serial.println("setup");
 
+
+#if defined(LILYGO_EPD_DISPLAY)
+    pinMode(EPD_POWER_ENABLE, OUTPUT);
+    digitalWrite(EPD_POWER_ENABLE, HIGH);
+#endif /*LILYGO_EPD_DISPLAY*/
+
     SPI.begin(EPD_SCLK, EPD_MISO, EPD_MOSI);
     display.init();
 
@@ -194,7 +213,11 @@ void setup()
     btn1.init(BUTTON_1);
     ButtonConfig *buttonConfig = btn1.getButtonConfig();
     buttonConfig->setEventHandler(aceButtonHandleEventCb);
+#ifdef LILYGO_T5_V102
+    buttonConfig->setFeature(ButtonConfig::kFeatureRepeatPress);
+#else
     buttonConfig->setFeature(ButtonConfig::kFeatureClick);
+#endif
     buttonConfig->setFeature(ButtonConfig::kFeatureLongPress);
 
 #ifdef BUTTON_2
@@ -202,20 +225,30 @@ void setup()
     btn2.init(BUTTON_2);
     buttonConfig = btn2.getButtonConfig();
     buttonConfig->setEventHandler(aceButtonHandleEventCb);
+#ifdef LILYGO_T5_V102
+    buttonConfig->setFeature(ButtonConfig::kFeatureRepeatPress);
+#else
     buttonConfig->setFeature(ButtonConfig::kFeatureClick);
+#endif
 #endif
 
 #ifdef BUTTON_3
-    pinMode(BUTTON_3, INPUT);
+    pinMode(BUTTON_3, INPUT_PULLUP);
     btn3.init(BUTTON_3);
     buttonConfig = btn3.getButtonConfig();
     buttonConfig->setEventHandler(aceButtonHandleEventCb);
+#ifdef LILYGO_T5_V102
+    buttonConfig->setFeature(ButtonConfig::kFeatureRepeatPress);
+#else
     buttonConfig->setFeature(ButtonConfig::kFeatureClick);
+#endif
 #endif
 
     testSpeaker();
 
     testWiFi();
+
+    rlst = setupSDCard();
 
     GxepdPage0();
 }
@@ -445,4 +478,5 @@ void GxepdPage2()
     display.setCursor((box_w / 2) - (w / 2 ), box_y  + offset_y4);
     display.print(str);
     display.update();
+    display.setFont();
 }
