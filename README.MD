@@ -21,14 +21,16 @@
 
 <h2 align = "left">Product link📷:</h2>
 
-|    Examples     |                          Product  Link                           |              Schematic              | Status |
-| :-------------: | :--------------------------------------------------------------: | :---------------------------------: | :----: |
-|  [ T5 V2.2]()   | [Product link](https://www.aliexpress.com/item/32850386996.html) | [Schematic](./schematic/T5V2.2.pdf) |   ✅    |
-|   [T5 V2.3]()   | [Product link](https://www.aliexpress.com/item/32869729970.html) | [Schematic](./schematic/T5V2.3.pdf) |   ✅    |
-|   [T5 V2.4]()   | [Product link](https://www.aliexpress.com/item/32860674791.html) | [Schematic](./schematic/T5V2.4.pdf) |   ✅    |
-|   [T5 V2.8]()   | [Product link](https://www.aliexpress.com/item/32867880658.html) | [Schematic](./schematic/T5v2.8.pdf) |   ✅    |
-|  [T5 V1.02]()   |                         [Product link]()                         |            [Schematic]()            |   X    |
-| [EPD DISPLAY]() |                         [Product link]()                         |            [Schematic]()            |   X    |
+|        Examples        |                          Product  Link                           |              Schematic              | Status |
+| :--------------------: | :--------------------------------------------------------------: | :---------------------------------: | :----: |
+|      [ T5 V2.2]()      | [Product link](https://www.aliexpress.com/item/32850386996.html) | [Schematic](./schematic/T5V2.2.pdf) |   ✅    |
+|      [T5 V2.3]()       | [Product link](https://www.aliexpress.com/item/32869729970.html) | [Schematic](./schematic/T5V2.3.pdf) |   ✅    |
+|      [T5 V2.4]()       | [Product link](https://www.aliexpress.com/item/32860674791.html) | [Schematic](./schematic/T5V2.4.pdf) |   ✅    |
+|      [T5 V2.8]()       | [Product link](https://www.aliexpress.com/item/32867880658.html) | [Schematic](./schematic/T5v2.8.pdf) |   ✅    |
+| [T92 V1.0/2.66 Inch]() |                         [Product link]()                         |            [Schematic]()            |   X    |
+|      [T5 V1.02]()      |                         [Product link]()                         |            [Schematic]()            |   X    |
+|    [EPD DISPLAY]()     |                         [Product link]()                         |            [Schematic]()            |   X    |
+|  [EPD DISPLAY GPS]()   |                         [Product link]()                         |            [Schematic]()            |   X    |
 
 
 
@@ -39,6 +41,7 @@ examples
 ├── GxEPD2_Z90_Eaxmple               # 1.54" red black and white three-color electronic paper example, 
 ├── GxEPD_Example                    # Suitable for all LilyGo electronic paper 
 ├── GxEPD_Example2                   # Suitable for all LilyGo electronic paper 
+├── GxEPD_EPD_GPS_1.54inch           # EPD + GPS example
 ├── GxEPD_Example_MP3                # Example of playing MP3 
 ├── GxEPD_U8G2_Fonts_Example         # U8g2 font example 
 └── GxEPD_Partial_Update_Example     # Partial refresh example 

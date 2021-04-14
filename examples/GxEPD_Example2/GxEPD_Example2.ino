@@ -10,7 +10,8 @@
 // #define LILYGO_T5_V28
 // #define LILYGO_T5_V102
 // #define LILYGO_T5_V266
-// #define LILYGO_EPD_DISPLAY
+// #define LILYGO_EPD_DISPLAY_102
+// #define LILYGO_EPD_DISPLAY_154
 
 #include <boards.h>
 #include <GxEPD.h>
@@ -20,7 +21,7 @@
 
 using namespace         ace_button;
 
-#if defined(LILYGO_T5_V102) || defined(LILYGO_EPD_DISPLAY)
+#if defined(LILYGO_T5_V102) || defined(LILYGO_EPD_DISPLAY_102)
 #include <GxGDGDEW0102T4/GxGDGDEW0102T4.h> //1.02" b/w
 #elif defined(LILYGO_T5_V266)
 #include <GxDEPG0266BN/GxDEPG0266BN.h>    // 2.66" b/w   form DKE GROUP
@@ -200,10 +201,10 @@ void setup()
     Serial.println("setup");
 
 
-#if defined(LILYGO_EPD_DISPLAY)
+#if defined(LILYGO_EPD_DISPLAY_102)
     pinMode(EPD_POWER_ENABLE, OUTPUT);
     digitalWrite(EPD_POWER_ENABLE, HIGH);
-#endif /*LILYGO_EPD_DISPLAY*/
+#endif /*LILYGO_EPD_DISPLAY_102*/
 
     SPI.begin(EPD_SCLK, EPD_MISO, EPD_MOSI);
     display.init();
