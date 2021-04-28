@@ -18,7 +18,7 @@
 #include <SD.h>
 #include <FS.h>
 
-#if defined(LILYGO_T5_V102) || defined(LILYGO_EPD_DISPLAY_102)
+#if defined(LILYGO_T5_V102) || defined(LILYGO_EPD_DISPLAY)
 #include <GxGDGDEW0102T4/GxGDGDEW0102T4.h> //1.02" b/w
 #include <Adafruit_NeoPixel.h>             //Depend  https://github.com/adafruit/Adafruit_NeoPixel
 #elif defined(LILYGO_T5_V266)
