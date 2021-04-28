@@ -71,7 +71,7 @@ SPIClass SDSPI(VSPI);
 #define _HAS_COLOR_
 #endif
 
-#if defined(LILYGO_EPD_DISPLAY_102)
+#if defined(LILYGO_EPD_DISPLAY)
 Adafruit_NeoPixel strip(RGB_STRIP_COUNT, RGB_STRIP_PIN, NEO_GRBW + NEO_KHZ800);
 #endif /*LILYGO_EPD_DISPLAY_102*/
 
@@ -148,7 +148,7 @@ void setup()
     Serial.println();
     Serial.println("setup");
 
-#if defined(LILYGO_EPD_DISPLAY_102)
+#if defined(LILYGO_EPD_DISPLAY)
     pinMode(EPD_POWER_ENABLE, OUTPUT);
     digitalWrite(EPD_POWER_ENABLE, HIGH);
     delay(50);
@@ -166,7 +166,7 @@ void setup()
     }
     strip.setPixelColor(0, 0);
     strip.show();
-#endif /*LILYGO_EPD_DISPLAY_102*/
+#endif /*LILYGO_EPD_DISPLAY*/
 
     SPI.begin(EPD_SCLK, EPD_MISO, EPD_MOSI);
 
