@@ -8,9 +8,9 @@
 // #define LILYGO_T5_V22
 // #define LILYGO_T5_V24
 // #define LILYGO_T5_V28
-// #define LILYGO_T5_V102                           //Depend  https://github.com/adafruit/Adafruit_NeoPixel
+// #define LILYGO_T5_V102                           
 // #define LILYGO_T5_V266
-      
+// #define LILYGO_EPD_DISPLAY         //T-Display 1.02 inch epaper   //Depend  https://github.com/adafruit/Adafruit_NeoPixel
 // #define LILYGO_EPD_DISPLAY_154
 
 #include <boards.h>
