@@ -11,6 +11,7 @@
 1. Install the following two dependencies
      - [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)
      - For the 1.54" red black and white, the sample program uses `GxEPD2` as the driver, you need to install [ZinggJM/GxEPD2](https://github.com/ZinggJM/GxEPD2), for other models, please use this branch [lewisxhe/fork/GxEPD](https://github.com/lewisxhe/GxEPD),Please note that referencing the wrong branch will cause the program to fail to compile 
+
 2.Copy all the folders in the lib directory to `"C:\User\<YourName>\Documents\Arduino\libraries"`
 3. At the top of the sketch, define the model of the board and screen to be used 
 4. Select `ESP32 Dev Module` in the development board, and keep the other options as default
