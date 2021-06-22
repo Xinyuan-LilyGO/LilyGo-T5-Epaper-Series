@@ -34,7 +34,6 @@
 |  [EPD DISPLAY GPS]()   |                         [Product link]()                         |            [Schematic]()            |   X    |
 
 
-
 <h2 align = "left">Example description:</h2>
 
 ```
