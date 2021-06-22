@@ -11,11 +11,12 @@
 1. Install the following two dependencies
      - [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)
      - For the 1.54" red black and white, the sample program uses `GxEPD2` as the driver, you need to install [ZinggJM/GxEPD2](https://github.com/ZinggJM/GxEPD2), for other models, please use this branch [lewisxhe/fork/GxEPD](https://github.com/lewisxhe/GxEPD),Please note that referencing the wrong branch will cause the program to fail to compile 
-2. At the top of the sketch, define the model of the board and screen to be used 
-3. Select `ESP32 Dev Module` in the development board, and keep the other options as default
-4. If you do not find the ESP32 series in the development board, then you should see the following installation method [How to install ESP32 in ArduinoIDE](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
-5. For the version of the board you purchased, please check the product link below 
-6. When you think there is a problem with your board, you can pull the binary file corresponding to your screen model in the firmware directory, follow the `SETTING.png` settings in the directory, download it to the board, and then observe the execution. 
+2.Copy all the folders in the lib directory to `"C:\User\<YourName>\Documents\Arduino\libraries"`
+3. At the top of the sketch, define the model of the board and screen to be used 
+4. Select `ESP32 Dev Module` in the development board, and keep the other options as default
+5. If you do not find the ESP32 series in the development board, then you should see the following installation method [How to install ESP32 in ArduinoIDE](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+6. For the version of the board you purchased, please check the product link below 
+7. When you think there is a problem with your board, you can pull the binary file corresponding to your screen model in the firmware directory, follow the `SETTING.png` settings in the directory, download it to the board, and then observe the execution. 
 
 
 
@@ -43,7 +44,9 @@ examples
 ├── GxEPD_Example2                   # Suitable for all LilyGo electronic paper 
 ├── GxEPD_EPD_GPS_1.54inch           # EPD + GPS example
 ├── GxEPD_Example_MP3                # Example of playing MP3 
-├── GxEPD_U8G2_Fonts_Example         # U8g2 font example 
+├── GxEPD_Hello_world                # EPD  Hello world example 
+├── GxEPD_RGB_LED                    # RGB LED example 
+├── GxEPD_SD_1.02_Example            # 1.02" SD example 
 └── GxEPD_Partial_Update_Example     # Partial refresh example 
 ```
 
