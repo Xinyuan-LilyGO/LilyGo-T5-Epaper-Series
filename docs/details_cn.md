@@ -23,16 +23,16 @@
 
 <h2 align = "left">产品链接📷:</h2>
 
-|          Name          |                          Product  Link                           |              Schematic              | Status |
-| :--------------------: | :--------------------------------------------------------------: | :---------------------------------: | :----: |
-|      [ T5 V2.2]()      | [Product link](https://www.aliexpress.com/item/32850386996.html) | [Schematic](./schematic/T5V2.2.pdf) |   ✅    |
-|      [T5 V2.3]()       | [Product link](https://www.aliexpress.com/item/32869729970.html) | [Schematic](./schematic/T5V2.3.pdf) |   ✅    |
-|      [T5 V2.4]()       | [Product link](https://www.aliexpress.com/item/32860674791.html) | [Schematic](./schematic/T5V2.4.pdf) |   ✅    |
-|      [T5 V2.8]()       | [Product link](https://www.aliexpress.com/item/32867880658.html) | [Schematic](./schematic/T5v2.8.pdf) |   ✅    |
-| [T92 V1.0/2.66 Inch]() |                         [Product link]()                         |            [Schematic]()            |   X    |
-|      [T5 V1.02]()      |                         [Product link]()                         |            [Schematic]()            |   X    |
-|    [EPD DISPLAY]()     |                         [Product link]()                         |            [Schematic]()            |   X    |
-|  [EPD DISPLAY GPS]()   |                         [Product link]()                         |            [Schematic]()            |   X    |
+|          Name          |                             Product  Link                             |              Schematic              | Status |
+| :--------------------: | :-------------------------------------------------------------------: | :---------------------------------: | :----: |
+|      [ T5 V2.2]()      |   [Product link](https://www.aliexpress.com/item/32850386996.html)    | [Schematic](./schematic/T5V2.2.pdf) |   ✅    |
+|      [T5 V2.3]()       |   [Product link](https://www.aliexpress.com/item/32869729970.html)    | [Schematic](./schematic/T5V2.3.pdf) |   ✅    |
+|      [T5 V2.4]()       |   [Product link](https://www.aliexpress.com/item/32860674791.html)    | [Schematic](./schematic/T5V2.4.pdf) |   ✅    |
+|      [T5 V2.8]()       |   [Product link](https://www.aliexpress.com/item/32867880658.html)    | [Schematic](./schematic/T5v2.8.pdf) |   ✅    |
+| [T92 V1.0/2.66 Inch]() |                           [Product link]()                            |            [Schematic]()            |   X    |
+|      [T5 V1.02]()      | [Product link](https://www.aliexpress.com/item/1005002857956100.html) |            [Schematic]()            |   X    |
+|    [EPD DISPLAY]()     |                           [Product link]()                            |            [Schematic]()            |   X    |
+|  [EPD DISPLAY GPS]()   |                           [Product link]()                            |            [Schematic]()            |   X    |
 
 
 <h2 align = "left">示例描述:</h2>
