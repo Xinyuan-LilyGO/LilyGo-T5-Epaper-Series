@@ -30,7 +30,7 @@
 |      [T5 V2.4]()       |   [Product link](https://www.aliexpress.com/item/32860674791.html)    | [Schematic](./schematic/T5V2.4.pdf) |   ✅    |
 |      [T5 V2.8]()       |   [Product link](https://www.aliexpress.com/item/32867880658.html)    | [Schematic](./schematic/T5v2.8.pdf) |   ✅    |
 | [T92 V1.0/2.66 Inch]() |                           [Product link]()                            |            [Schematic]()            |   X    |
-|      [T5 V1.02]()      | [Product link](https://www.aliexpress.com/item/1005002857956100.html) |            [Schematic]()            |   X    |
+|      [T5 V1.02]()      | [Product link](https://www.aliexpress.com/item/1005002857956100.html) |            [Schematic]()            |   ✅    |
 |    [EPD DISPLAY]()     |                           [Product link]()                            |            [Schematic]()            |   X    |
 |  [EPD DISPLAY GPS]()   |                           [Product link]()                            |            [Schematic]()            |   X    |
 
