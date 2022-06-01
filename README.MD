@@ -22,16 +22,15 @@
 
 <h2 align = "left">Product link📷:</h2>
 
-|        Examples        |                             Product  Link                             |              Schematic              | Status |
-| :--------------------: | :-------------------------------------------------------------------: | :---------------------------------: | :----: |
-|      [ T5 V2.2]()      |   [Product link](https://www.aliexpress.com/item/32850386996.html)    | [Schematic](./schematic/T5V2.2.pdf) |   ✅    |
-|      [T5 V2.3]()       |   [Product link](https://www.aliexpress.com/item/32869729970.html)    | [Schematic](./schematic/T5V2.3.pdf) |   ✅    |
-|      [T5 V2.4]()       |   [Product link](https://www.aliexpress.com/item/32860674791.html)    | [Schematic](./schematic/T5V2.4.pdf) |   ✅    |
-|      [T5 V2.8]()       |   [Product link](https://www.aliexpress.com/item/32867880658.html)    | [Schematic](./schematic/T5v2.8.pdf) |   ✅    |
-| [T92 V1.0/2.66 Inch]() |                           [Product link]()                            |            [Schematic]()            |   X    |
-|      [T5 V1.02]()      | [Product link](https://www.aliexpress.com/item/1005002857956100.html) |            [Schematic]()            |   ✅    |
-|    [EPD DISPLAY]()     |                           [Product link]()                            |            [Schematic]()            |   X    |
-|  [EPD DISPLAY GPS]()   |                           [Product link]()                            |            [Schematic]()            |   X    |
+|          Examples           |                             Product  Link                             |                     Schematic                      | Status |
+| :-------------------------: | :-------------------------------------------------------------------: | :------------------------------------------------: | :----: |
+|         [T5 V2.2]()         |   [Product link](https://www.aliexpress.com/item/32850386996.html)    |        [Schematic](./schematic/T5V2.2.pdf)         |   ✅    |
+|         [T5 V2.3]()         |   [Product link](https://www.aliexpress.com/item/32869729970.html)    |        [Schematic](./schematic/T5V2.3.pdf)         |   ✅    |
+|         [T5 V2.4]()         |   [Product link](https://www.aliexpress.com/item/32860674791.html)    |        [Schematic](./schematic/T5V2.4.pdf)         |   ✅    |
+|         [T5 V2.8]()         |   [Product link](https://www.aliexpress.com/item/32867880658.html)    |        [Schematic](./schematic/T5v2.8.pdf)         |   ✅    |
+|        [T5 2.66"]()         | [Product link](https://www.aliexpress.com/item/1005002474854718.html) |        [Schematic](./schematic/T5_2.66.pdf)        |   ✅    |
+|   [MINI E-Paper 1.02"]()    | [Product link](https://www.aliexpress.com/item/1005002857956100.html) | [Schematic](./schematic/MINI%20E-Paper%201.02.pdf) |   ✅    |
+| [T-Dispay E-paper 1.02" ]() | [Product link](https://www.aliexpress.com/item/1005002536380666.html) |                   [Schematic]()                    |   ✅    |
 
 
 <h2 align = "left">Example description:</h2>
