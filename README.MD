@@ -37,15 +37,16 @@
 
 ```
 examples
-├── GxEPD2_Z90_Eaxmple               # 1.54" red black and white three-color electronic paper example, 
-├── GxEPD_Example                    # Suitable for all LilyGo electronic paper 
-├── GxEPD_Example2                   # Suitable for all LilyGo electronic paper 
-├── GxEPD_EPD_GPS_1.54inch           # EPD + GPS example
-├── GxEPD_Example_MP3                # Example of playing MP3 
-├── GxEPD_Hello_world                # EPD  Hello world example 
-├── GxEPD_RGB_LED                    # RGB LED example 
-├── GxEPD_SD_1.02_Example            # 1.02" SD example 
-└── GxEPD_Partial_Update_Example     # Partial refresh example 
+├── GxEPD2_Z90_Eaxmple                       # 1.54" red black and white three-color electronic paper example, 
+├── GxEPD_Example                            # Suitable for all LilyGo electronic paper 
+├── GxEPD_Example2                           # Suitable for all LilyGo electronic paper 
+├── GxEPD_EPD_GPS_1.54inch                   # EPD + GPS example
+├── GxEPD_Example_MP3                        # Example of playing MP3 
+├── GxEPD_Hello_world                        # EPD  Hello world example 
+├── GxEPD_RGB_LED                            # RGB LED example 
+├── GxEPD_SD_1.02_Example                    # 1.02" SD example 
+├── GxEPD_Partial_Update_Example             # Partial refresh example 
+└── GxEPD_nRF2401_RelayCtrl_1.02_Exapmle     # Use Mini Epaper with 2.4G wireless module example to control T-Relay
 ```
 
 # Change: 
