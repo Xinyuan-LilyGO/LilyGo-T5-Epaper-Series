@@ -1,7 +1,7 @@
 
 <h1 align = "center">🌟LilyGo T5 Epaper Series🌟</h1>
 
-### English | [中文](docs/details_cn.md) 
+### English | [中文](docs/details_cn.md)
 
 --------------------------------------
 
@@ -12,11 +12,11 @@
      - [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)
      - For the 1.54" red black and white, the sample program uses `GxEPD2` as the driver, you need to install [ZinggJM/GxEPD2](https://github.com/ZinggJM/GxEPD2), for other models, please use this branch [lewisxhe/fork/GxEPD](https://github.com/lewisxhe/GxEPD),Please note that referencing the wrong branch will cause the program to fail to compile
 2. Copy all the folders in the lib directory to `"C:\User\<YourName>\Documents\Arduino\libraries"`
-3. At the top of the sketch, define the model of the board and screen to be used 
+3. At the top of the sketch, define the model of the board and screen to be used
 5. Select `ESP32 Dev Module` in the development board, and keep the other options as default
 6. If you do not find the ESP32 series in the development board, then you should see the following installation method [How to install ESP32 in ArduinoIDE](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
-7. For the version of the board you purchased, please check the product link below 
-8. When you think there is a problem with your board, you can pull the binary file corresponding to your screen model in the firmware directory, follow the `SETTING.png` settings in the directory, download it to the board, and then observe the execution. 
+7. For the version of the board you purchased, please check the product link below
+8. When you think there is a problem with your board, you can pull the binary file corresponding to your screen model in the firmware directory, follow the `SETTING.png` settings in the directory, download it to the board, and then observe the execution.
 
 
 
@@ -37,17 +37,19 @@
 
 ```
 examples
-├── GxEPD2_Z90_Eaxmple                       # 1.54" red black and white three-color electronic paper example, 
-├── GxEPD_Example                            # Suitable for all LilyGo electronic paper 
-├── GxEPD_Example2                           # Suitable for all LilyGo electronic paper 
+├── GxEPD2_Z90_Eaxmple                       # 1.54" red black and white three-color electronic paper example,
+├── GxEPD_Example                            # Suitable for all LilyGo electronic paper
+├── GxEPD_Example2                           # Suitable for all LilyGo electronic paper
 ├── GxEPD_EPD_GPS_1.54inch                   # EPD + GPS example
-├── GxEPD_Example_MP3                        # Example of playing MP3 
-├── GxEPD_Hello_world                        # EPD  Hello world example 
-├── GxEPD_RGB_LED                            # RGB LED example 
-├── GxEPD_SD_1.02_Example                    # 1.02" SD example 
-├── GxEPD_Partial_Update_Example             # Partial refresh example 
-└── GxEPD_nRF2401_RelayCtrl_1.02_Exapmle     # Use Mini Epaper with 2.4G wireless module example to control T-Relay
+├── GxEPD_Example_MP3                        # Example of playing MP3
+├── GxEPD_Hello_world                        # EPD  Hello world example
+├── GxEPD_RGB_LED                            # RGB LED example
+├── GxEPD_SD_1.02_Example                    # 1.02" SD example
+├── GxEPD_Partial_Update_Example             # Partial refresh example
+├─  GxEPD_nRF2401_RelayCtrl_1.02_Exapmle     # Use Mini Epaper with 2.4G wireless module example to control T-Relay
+│    └─TRelayExample                         # T-Relay use 2.4G Module examples
+└── GxEPD_nRF2401_Sensor_1.02_Exapmle        # Using TTGO MINI E-Paper 1.02" epaper , Send sensor value via nRF24
 ```
 
-# Change: 
-- The current version of LilyGo V2.13, the ink screen version is DEPG0213BN, please select `DEPG0213BN` in the sketch 
+# Change:
+- The current version of LilyGo V2.13, the ink screen version is DEPG0213BN, please select `DEPG0213BN` in the sketch
