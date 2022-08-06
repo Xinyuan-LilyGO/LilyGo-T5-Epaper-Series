@@ -30,7 +30,7 @@
 |         [T5 V2.8]()         |   [Product link](https://www.aliexpress.com/item/32867880658.html)    |        [Schematic](./schematic/T5v2.8.pdf)         |   ✅    |
 |        [T5 2.66"]()         | [Product link](https://www.aliexpress.com/item/1005002474854718.html) |        [Schematic](./schematic/T5_2.66.pdf)        |   ✅    |
 |   [MINI E-Paper 1.02"]()    | [Product link](https://www.aliexpress.com/item/1005002857956100.html) | [Schematic](./schematic/MINI%20E-Paper%201.02.pdf) |   ✅    |
-| [T-Dispay E-paper 1.02" ]() | [Product link](https://www.aliexpress.com/item/1005002536380666.html) |                   [Schematic]()                    |   ✅    |
+| [T-Dispay E-paper 1.02" ]() | [Product link](https://www.aliexpress.com/item/1005002536380666.html) |  [Schematic](./schematic/T-DispayEpaper1.02.pdf)   |   ✅    |
 
 
 <h2 align = "left">Example description:</h2>
