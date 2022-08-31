@@ -9,15 +9,12 @@
 
 <h2 align = "left">快速开始⚡:</h2>
 
-1. 安装下面两个依赖
-    - [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)
-    - 对于使用1.54" 红黑白的,示例程序使用`GxEPD2`作为驱动程序,需要安装[ZinggJM/GxEPD2](https://github.com/ZinggJM/GxEPD2),对于其他型号,请使用这个分支[lewisxhe/fork/GxEPD](https://github.com/lewisxhe/GxEPD),请注意，引用错误的分支会导致程序无法编译
-2. 把lib的库添加到`"C:\User\<YourName>\Documents\Arduino\libraries"`
-3. 在草图的最上方,定义要使用的板子和屏幕的型号
-4. 在开发板中选择`ESP32 Dev Module`，其他选项保持默认
-5. 如果你在开发板中没找到ESP32系列，那么你该看下面安装方法[如何在ArduinoIDE中安装ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
-6. 关于你购买的板子的版本,请查看下面的产品连接
-7. 当你认为你的板子有问题时,你可以在`firmware`目录拉取与你对应屏幕型号的二进制文件，按照目录内的`SETTING.png`设置后,将它下载到板子，然后观察执行情况.
+1. 把lib 文件夹里所有的文件夹 拷贝到 `"C:\User\<YourName>\Documents\Arduino\libraries"`
+2. 在草图的最上方,定义要使用的板子和屏幕的型号
+3. 在开发板中选择`ESP32 Dev Module`，其他选项保持默认
+4. 如果你在开发板中没找到ESP32系列，那么你该看下面安装方法[如何在ArduinoIDE中安装ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+5. 关于你购买的板子的版本,请查看下面的产品连接
+6. 当你认为你的板子有问题时,你可以在`firmware`目录拉取与你对应屏幕型号的二进制文件，按照目录内的`SETTING.png`设置后,将它下载到板子，然后观察执行情况.
 
 
 
