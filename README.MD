@@ -50,3 +50,8 @@ examples
 
 # Change:
 - The current version of LilyGo V2.13, the ink screen version is DEPG0213BN, please select `DEPG0213BN` in the sketch
+
+# Case
+
+-[TTGO T5 Case form user](https://www.printables.com/search/models?ctx=models&q=TTGO+T5)
+
