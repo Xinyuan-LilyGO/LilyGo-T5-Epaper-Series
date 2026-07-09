@@ -1,9 +1,11 @@
 # Deepsleep Test
 
-## GDEM0213B74
+[LilyGo T5 V2.4 Deep Sleep Power Consumption Test Record](https://youtube.com/shorts/9wAvt5J69zs)
 
-![](./images/GDEM0213B74.jpg)
+# GDEY0213B74 Aboud 30 uA
 
-## DEPG0213BN
+![](./images/GDEY0213B74.png)
 
-![](./images/DEPG0213BN.jpg)
+# DEPG0213BN Aboud 30 uA
+
+![](./images/DEPG0213BN.PNG)

@@ -1,57 +1,121 @@
 
-<h1 align = "center">🌟LilyGo T5 Epaper Series🌟</h1>
+<div align="center" markdown="1">
+  <img src=".github/LilyGo_logo.png" alt="LilyGo logo" width="100"/>
+</div>
 
-### English | [中文](docs/details_cn.md)
+<h1 align="center">LilyGo T5 2.13 E-Paper</h1>
 
---------------------------------------
+### Product
 
+| Product           | SOC   | Flash         | PSRAM |
+| ----------------- | ----- | ------------- | ----- |
+| [T5 2.13 Inch][1] | ESP32 | 4MB(Quad-SPI) | N.A   |
 
-<h2 align = "left">Quick start ⚡:</h2>
-
-1. Copy all the folders in the lib directory to `"C:\User\<YourName>\Documents\Arduino\libraries"`
-2. At the top of the sketch, define the model of the board and screen to be used
-3. Select `ESP32 Dev Module` in the development board, and keep the other options as default
-4. If you do not find the ESP32 series in the development board, then you should see the following installation method [How to install ESP32 in ArduinoIDE](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
-5. For the version of the board you purchased, please check the product link below
-6. When you think there is a problem with your board, you can pull the binary file corresponding to your screen model in the firmware directory, follow the `SETTING.png` settings in the directory, download it to the board, and then observe the execution.
+[1]: https://lilygo.cc/products/t5-v2-3-1
 
 
-
-<h2 align = "left">Product link📷:</h2>
-
-|          Examples           |                             Product  Link                             |                     Schematic                      | Status |
-| :-------------------------: | :-------------------------------------------------------------------: | :------------------------------------------------: | :----: |
-|         [T5 V2.2]()         |   [Product link](https://www.aliexpress.com/item/32850386996.html)    |        [Schematic](./schematic/T5V2.2.pdf)         |   ✅    |
-|         [T5 V2.3]()         |   [Product link](https://www.aliexpress.com/item/32869729970.html)    |        [Schematic](./schematic/T5V2.3.pdf)         |   ✅    |
-|         [T5 V2.4]()         |   [Product link](https://www.aliexpress.com/item/32860674791.html)    |        [Schematic](./schematic/T5V2.4.pdf)         |   ✅    |
-|         [T5 V2.8]()         |   [Product link](https://www.aliexpress.com/item/32867880658.html)    |        [Schematic](./schematic/T5v2.8.pdf)         |   ✅    |
-|        [T5 2.66"]()         | [Product link](https://www.aliexpress.com/item/1005002474854718.html) |        [Schematic](./schematic/T5_2.66.pdf)        |   ✅    |
-|   [MINI E-Paper 1.02"]()    | [Product link](https://www.aliexpress.com/item/1005002857956100.html) | [Schematic](./schematic/MINI%20E-Paper%201.02.pdf) |   ✅    |
-| [T-Dispay E-paper 1.02" ]() | [Product link](https://www.aliexpress.com/item/1005002536380666.html) |  [Schematic](./schematic/T-DispayEpaper1.02.pdf)   |   ✅    |
+<h2 align="left">Quick Start</h2>
 
 
-<h2 align = "left">Example description:</h2>
+### PlatformIO Quick Start
 
-```
-examples
-├── GxEPD2_Z90_Eaxmple                       # 1.54" red black and white three-color electronic paper example,
-├── GxEPD_Example                            # Suitable for all LilyGo electronic paper
-├── GxEPD_Example2                           # Suitable for all LilyGo electronic paper
-├── GxEPD_EPD_GPS_1.54inch                   # EPD + GPS example
-├── GxEPD_Example_MP3                        # Example of playing MP3
-├── GxEPD_Hello_world                        # EPD  Hello world example
-├── GxEPD_RGB_LED                            # RGB LED example
-├── GxEPD_SD_1.02_Example                    # 1.02" SD example
-├── GxEPD_Partial_Update_Example             # Partial refresh example
-├─  GxEPD_nRF2401_RelayCtrl_1.02_Exapmle     # Use Mini Epaper with 2.4G wireless module example to control T-Relay
-│    └─TRelayExample                         # T-Relay use 2.4G Module examples
-└── GxEPD_nRF2401_Sensor_1.02_Exapmle        # Using TTGO MINI E-Paper 1.02" epaper , Send sensor value via nRF24
-```
+1. Install the **CH9102 USB bridge** driver for the first time.
+   * [Windows](https://www.wch-ic.com/downloads/CH343SER_ZIP.html)
+   * [Mac OS](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html)
+2. Install [Visual Studio Code](https://code.visualstudio.com/) and [Python](https://www.python.org/)
+3. Search for the `PlatformIO` plugin in the `Visual Studio Code` extension and install it.
+4. After the installation is complete, restart `Visual Studio Code`.
+5. Select `File` -> `Open Folder` in the upper left corner, then select the `LilyGo-T5-Epaper-Series` directory.
+6. Wait for the installation of third-party dependent libraries to complete.
+7. Click on the `platformio.ini` file.
+8. Uncomment one of the `src_dir = xxxx` lines so that only one is active. For example, to enable `src_dir = examples/Factory`, remove the leading `;` and save the file.
+9. Click the (checkmark) symbol in the lower left corner to compile.
+10. Connect the board to the computer via Micro-USB.
+11. Click (arrow) to upload firmware.
+12. Click (plug symbol) to monitor serial output.
+13. If the upload fails or the USB device keeps flashing, please check the **FAQ** below.
 
-# Change:
-- The current version of LilyGo V2.13, the ink screen version is DEPG0213BN, please select `DEPG0213BN` in the sketch
 
-# Case
+### Arduino IDE Quick Start
 
--[TTGO T5 Case form user](https://www.printables.com/search/models?ctx=models&q=TTGO+T5)
+1. Install the **CH9102 USB bridge** driver for the first time.
+   * [Windows](https://www.wch-ic.com/downloads/CH343SER_ZIP.html)
+   * [Mac OS](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html)
+2. Install [Arduino IDE](https://www.arduino.cc/en/software).
+3. Install [Arduino ESP32](https://docs.espressif.com/projects/arduino-esp32/en/latest/).
+4. Copy all folders in the `lib` directory to the `Sketchbook location` directory.
+   How to find your library path, [see here](https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer).
+   * Windows: `C:\Users\%USERNAME%\Documents\Arduino\libraries`
+   * MacOS: `$HOME/Documents/Arduino/libraries`
+   * Linux: `$HOME/Arduino/libraries`
+5. Open the corresponding example:
+   * Open the downloaded `LilyGo-T5-Epaper-Series`
+   * Open `examples`
+   * Select the sample file ending with `.ino`
+6. In Arduino IDE, select the board and settings as shown below:
 
+   | Name                                 | Value                                |
+   | ------------------------------------ | ------------------------------------ |
+   | Board                                | **ESP32 Dev Module**                 |
+   | Port                                 | Your port                            |
+   | CPU Frequency                        | 240MHz(WiFi/BT)                      |
+   | Core Debug Level                     | None                                 |
+   | Erase All Flash Before Sketch Upload | Disable                              |
+   | Events Run On                        | Core1                                |
+   | Flash Frequency                      | 80MHz                                |
+   | Flash Mode                           | QIO                                  |
+   | Flash Size                           | **4MB(32Mb)**                        |
+   | JTAG Adapter                         | Disabled                             |
+   | Arduino Runs On                      | Core1                                |
+   | Partition Scheme                     | **Huge APP (3MB No OTA/1MB SPIFFS)** |
+   | PSRAM                                | **Disable**                          |
+   | Upload Speed                         | 921600                               |
+   | Programmer                           | **Esptool**                          |
+
+7. At the top of the sketch, select the screen model you are using: **DEPG0213BN** (default) or **GDEY0213B74**. Uncomment the corresponding line and comment out the other.
+
+### Pins Map
+
+| Name                  | GPIO NUM   |
+| --------------------- | ---------- |
+| Display power control | 12         |
+| Display MISO          | No Connect |
+| Display MOSI          | 23         |
+| Display SCLK          | 18         |
+| Display DC            | 17         |
+| Display BUSY          | 4          |
+| Display RST           | 16         |
+| Display CS            | 5          |
+| SD SCK                | 14         |
+| SD MISO               | 2          |
+| SD MOSI               | 15         |
+| SD CS                 | 13         |
+| Battery ADC Pin       | 35         |
+| Button BOOT           | 0          |
+| Button 1              | 39         |
+
+* (Display power control) GPIO12 Only V2.4 Version , v2.3.1 version not have this pin
+
+> [!IMPORTANT]
+> The ESP32 uses IO2 as the SD card CS pin. You cannot upload software when the SD card is inserted, so remove the SD card before uploading.
+
+### FAQ
+
+- **What is the device's sleep current?**
+   1. With the screen power completely off, the external wake-up rate of the ESP32 is approximately 30uA. A complete record of this can be found [here](./examples/DeepSleep/README.MD)
+
+- **Can't upload any sketch? Please enter upload mode manually.**
+  1. Connect the board via the USB cable.
+  2. Press and hold the BOOT button.
+  3. While holding BOOT, press the RST button.
+  4. Release the RST button.
+  5. Release the BOOT button.
+  6. Upload the sketch.
+
+
+### Resources
+
+- [PCB Dimensions](./dimensions/T5_2.13.dxf)
+- [PCB Step](./dimensions/LILYGO_T5%202.13.stp)
+- [Schematic](./schematic/T5_2.13.pdf)
+- [Cases from users](https://www.printables.com/search/models?ctx=models&q=TTGO+T5)

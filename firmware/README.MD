@@ -1,5 +1,64 @@
-1. Tool download  [flash_download_tool](https://www.espressif.com/sites/default/files/tools/flash_download_tool_v3.8.5.zip)
+<div align="center" markdown="1">
+  <img src="../.github/LilyGo_logo.png" alt="LilyGo logo" width="100"/>
+</div>
 
-2. Set according to the picture 
+<h1 align = "center">🌟LilyGo-T5 2.13 Inch Firmware</h1>
 
-    ![](./SETTING.png)
+
+## Use ESP Download Tool
+
+* [Flash Download Tool User Guide](https://docs.espressif.com/projects/esp-test-tools/en/latest/esp32/production_stage/tools/flash_download_tool.html)
+
+| Steps  | ESP32 Version                   |
+| ------ | ------------------------------- |
+| Step 1 | ![esp32dev](images/esp32-1.png) |
+| Step 2 | ![esp32dev](images/esp32-2.png) |
+
+### Use Web Flasher
+
+* [ESP Web Flasher Online](https://espressif.github.io/esptool-js/)
+
+![web_flasher](./images/web_flasher.gif)
+
+* Note that after writing is completed, you need to press RST to reset.
+
+### Use command line
+
+If system asks about install Developer Tools, do it.
+
+```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install esptool
+```
+
+In order to launch `esptool.py`, exec directly with this:
+
+```bash
+python3 -m esptool
+```
+
+<!-- For **ESP32-S3** use the following command to write
+
+```bash
+esptool --chip esp32s3  --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 80m 0x0 firmware.bin
+``` -->
+
+For **ESP32** use the following command to write
+
+```bash
+esptool --chip esp32  --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 80m 0x0 firmware.bin
+```
+
+# 2️⃣FAQ
+
+- **Can't upload any sketch，Please enter the upload mode manually.**
+   1. Connect the board via the USB cable
+   2. Press and hold the BOOT button , While still pressing the BOOT button 
+   3. Press RST button
+   4. Release the RST button
+   5. Release the BOOT button
+   6. Upload sketch
+
+> \[!IMPORTANT]
+> ESP32 version Since the SD card uses IO2 as CS, you cannot upload software in the Arduino IDE when you insert the SD card, so you must remove the SD card when uploading new code
+>
