@@ -27,6 +27,8 @@
 
 #define ADC_PIN                 (35)
 
+#define EPD_PWR_EN              (12)    // Only V2.4 Version
+
 #define _HAS_ADC_DETECTED_
 #define _HAS_LED_
 #define _HAS_SDCARD_
