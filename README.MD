@@ -119,3 +119,15 @@
 - [PCB Step](./dimensions/LILYGO_T5%202.13.stp)
 - [Schematic](./schematic/T5_2.13.pdf)
 - [Cases from users](https://www.printables.com/search/models?ctx=models&q=TTGO+T5)
+
+### Hardware Revision
+
+#### V2.4
+
+* Added GPIO12 control for screen power; improved deep-sleep power consumption (deep-sleep draw is approximately 30µA).
+* Added a BOOT button to allow manual entry into download mode if the automatic download circuit fails.
+* Optimized WiFi antenna for better WiFi performance.
+
+#### V2.3.1
+
+* Initial version
