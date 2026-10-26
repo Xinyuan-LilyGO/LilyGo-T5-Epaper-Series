@@ -99,6 +99,22 @@
 > [!IMPORTANT]
 > The ESP32 uses IO2 as the SD card CS pin. You cannot upload software when the SD card is inserted, so remove the SD card before uploading.
 
+### Electrical Parameters
+
+| Feature             | Details                                                  |
+| ------------------- | -------------------------------------------------------- |
+| USB-C Input Voltage | 4.8V - 5.5V                                              |
+| Charge Current      | 500mA (Fixed)                                            |
+| Battery Voltage     | Single-cell rechargeable Li-ion/LiPo (4.2 V full-charge) |
+| Battery Connector   | [MX 1.25mm][6]                                           |
+
+[6]: https://dghonshi.com/productinfo/1152005.html
+
+> \[!IMPORTANT]
+>
+> Do not use or charge LiFePO4 batteries, or any battery with a full-charge voltage other than 4.2 V, in this device. This device supports only single-cell rechargeable Li-ion/LiPo batteries with a 4.2 V full-charge voltage.
+>
+
 ### FAQ
 
 - **What is the device's sleep current?**
@@ -111,7 +127,6 @@
   4. Release the RST button.
   5. Release the BOOT button.
   6. Upload the sketch.
-
 
 ### Resources
 
