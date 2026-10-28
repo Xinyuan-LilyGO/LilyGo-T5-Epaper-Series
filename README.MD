@@ -104,6 +104,7 @@
 | Feature             | Details                                                  |
 | ------------------- | -------------------------------------------------------- |
 | USB-C Input Voltage | 4.8V - 5.5V                                              |
+| Charge              | TP4054                                                   |
 | Charge Current      | 500mA (Fixed)                                            |
 | Battery Voltage     | Single-cell rechargeable Li-ion/LiPo (4.2 V full-charge) |
 | Battery Connector   | [MX 1.25mm][6]                                           |
@@ -130,10 +131,11 @@
 
 ### Resources
 
-- [PCB Dimensions](./dimensions/T5_2.13.dxf)
-- [PCB Step](./dimensions/LILYGO_T5%202.13.stp)
-- [Schematic](./schematic/T5_2.13.pdf)
-- [Cases from users](https://www.printables.com/search/models?ctx=models&q=TTGO+T5)
+* [PCB Dimensions](./dimensions/T5_2.13.dxf)
+* [PCB Step](./dimensions/LILYGO_T5%202.13.stp)
+* [V2.3 Schematic](./schematic/T5_2.3.pdf)
+* [V2.4 Schematic](./schematic/T5_2.4.pdf)
+* [Cases from users](https://www.printables.com/search/models?ctx=models&q=TTGO+T5)
 
 ### Hardware Revision
 
