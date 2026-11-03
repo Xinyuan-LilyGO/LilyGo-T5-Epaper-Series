@@ -101,13 +101,13 @@
 
 ### Electrical Parameters
 
-| Feature             | Details                                                  |
-| ------------------- | -------------------------------------------------------- |
-| USB-C Input Voltage | 4.8V - 5.5V                                              |
-| Charge              | TP4054                                                   |
-| Charge Current      | 500mA (Fixed)                                            |
-| Battery Voltage     | Single-cell rechargeable Li-ion/LiPo (4.2 V full-charge) |
-| Battery Connector   | [MX 1.25mm][6]                                           |
+| Feature           | Details                                                  |
+| ----------------- | -------------------------------------------------------- |
+| USB Input Voltage | 4.8V - 5.5V                                              |
+| Charge            | TP4054                                                   |
+| Charge Current    | 500mA (Fixed)                                            |
+| Battery Voltage   | Single-cell rechargeable Li-ion/LiPo (4.2 V full-charge) |
+| Battery Connector | [MX 1.25mm][6]                                           |
 
 [6]: https://dghonshi.com/productinfo/1152005.html
 
